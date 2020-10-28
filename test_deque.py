@@ -272,12 +272,12 @@ class TestDeque(unittest.TestCase):
     Emptiness
     """
 
-    # def test_empty(self):
-    #     """
-    #     A deque is initially empty.
-    #     """
-    #     d = Deque()
-    #     self.assertTrue(d.is_empty())
+    def test_empty(self):
+        """
+        A deque is initially empty.
+        """
+        d = Deque()
+        self.assertTrue(d.is_empty())
 
     # def test_not_empty_left(self):
     #     """
