@@ -324,16 +324,16 @@ class TestDeque(unittest.TestCase):
         _ = d.dequeue_left()
         self.assertFalse(d.is_empty())
 
-    # def test_not_empty_multiple_right(self):
-    #     """
-    #     A deque with two enqueued values is not empty after dequeuing only one
-    #     from the right.
-    #     """
-    #     d = Deque()
-    #     d.enqueue_left('fee')
-    #     d.enqueue_left('fi')
-    #     _ = d.dequeue_right()
-    #     self.assertFalse(d.is_empty())
+    def test_not_empty_multiple_right(self):
+        """
+        A deque with two enqueued values is not empty after dequeuing only one
+        from the right.
+        """
+        d = Deque()
+        d.enqueue_left('fee')
+        d.enqueue_left('fi')
+        _ = d.dequeue_right()
+        self.assertFalse(d.is_empty())
 
     # def test_initial_dequeue(self):
     #     """
